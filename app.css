@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+.contentWrapper
+{
+    width: 80%;
+    height: 80vh;
+    background-color: #212738;
+    border-radius: 30px;
+    box-shadow: 4px 4px 2px 2px #32213A;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}       
+
+body
+{
+    background-color: #EDF2EF;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content
+{
+    width: 80%;
+    height: 100%;
+}
+
+/*#region arrow css */
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+}
+.arrow-wrapper:hover h1 {
+  opacity: 1;
+}
+#arrow_2 .arrow {
+  color: #57C4E5;
+  cursor: pointer;
+  font-family: Righteous;
+  display: block;
+  align-items: flex-start;
+  text-transform: uppercase;
+  position: relative;
+  transition: transform 0.3s;
+}
+#arrow_2 .arrow span {
+  display: block;
+  width: 3em;
+  opacity: 0;
+  transition: opacity 0.3s 0s;
+  padding: 0 0.5em;
+}
+#arrow_2 .arrow:hover span {
+  opacity: 1;
+  transition: opacity 0.3s 0.1s;
+}
+#arrow_2 .arrow:before {
+  content: '';
+  display: block;
+  border: solid #57C4E5;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+}
+#arrow_2 .arrow.arrow--left:before {
+  transform: rotate(-135deg);
+  right: 0;
+  transition: right 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--left:hover:before {
+  right: 100%;
+  transition: right 0.3s;
+}
+#arrow_2 .arrow.arrow--right {
+  text-align: right;
+}
+#arrow_2 .arrow.arrow--right:before {
+  left: 0;
+  transform: rotate(45deg);
+  transition: left 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--right:hover:before {
+  left: 100%;
+  transition: left 0.3s;
+}
+#arrow_2 .arrow:hover {
+  transform: none;
+}
+/*#endregion*/
+
+.welcomeCard
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapse-true
+{
+    display: none;
+}
+
+/* #region inital text */
+
+.welcomeCard h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D1D646;
+    font-size: 2.5em;
+    text-align: center;
+    width: 85%;
+}
+
+.welcomeCard p
+{
+    color: #EDF2EF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+.welcomeCard div
+{
+    height: 9rem;
+}
+
+.blog
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog div
+{
+    -webkit-overflow-scrolling: ;
+    width: 85%;;
+    height: 23em;
+    overflow-y: scroll;
+}
+
