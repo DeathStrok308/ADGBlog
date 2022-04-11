@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 .contentWrapper
 {
-    width: 80%;
+    width: 60%;
     height: 80vh;
     background-color: #212738;
     border-radius: 30px;
@@ -16,8 +16,9 @@ body
     background-color: #EDF2EF;
     margin: 0px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .content
@@ -126,18 +127,61 @@ body
     height: 9rem;
 }
 
-.blog
+.blogCard
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.blog div
+
+.blogCard div
 {
-    -webkit-overflow-scrolling: ;
     width: 85%;;
-    height: 23em;
+    height: 28em;
     overflow-y: scroll;
+    background-color: #EDF2EF;
+    padding: 0px 20px;
+    border-radius: 10px;
 }
+
+.blogCard ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.blogCard ::-webkit-scrollbar-track {
+  background: #EDF2EF;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+.blogCard ::-webkit-scrollbar-thumb {
+  background: #212738;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.blogCard ::-webkit-scrollbar-thumb:hover {
+  background: #3a4156;
+}
+
+.blogCard footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+}
+
+.blogCard footer div
+{
+  background-color: #212738;
+  color: #57C4E5;
+  height: 20px;
+  overflow-y: hidden;
+  /* padding: 1em 0.6em; */
+}
+
 
